@@ -4,3 +4,58 @@ body {
   background-color: #FFFF99;
   font-family: Arial, sans-serif
   }
+:root {
+  --verde: #159447;
+  --verde-escuro: #08652F;
+  --verde-claro: #A8E6B7;
+
+  --amarelo: #FFD52A;
+  --amarelo-claro: #FFF0A6;
+
+  --branco: #FFFFFF;
+}
+
+/* Configuração geral */
+body {
+  background-colo: var(--branco);
+  color: var(--texto);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+
+/* Cabeçalho */
+header {
+ background-color: var(--branco);
+  color: var(--texto);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  color: var(--texto);
+  font-size: 16px;
+}
+
+/* Parágrafos */
+p {
+  color: var(--texto);
+  font-size: 16px;
+}
+
+  /* Botões */
+button {
+background-color: var(--branco);
+  color: var(--texto);
+  border: 2px solid var(--borda);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Cartões */
+.card {
+  background-color: var(--branco);
+  padding
+}
