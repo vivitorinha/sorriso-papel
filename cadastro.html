@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Básico</title>
+    <!-- Vinculação do arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro_estilo.css">
+</head>
+<body class="bodyCadastro">
+
+    <div class="register-container">
+        <h2>Criar Conta</h2>
+        
+        <form action="#" method="POST">
+            <!-- Campo Nome -->
+            <div class="input-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+
+            <!-- Campo Data de Nascimento -->
+            <div class="input-group">
+                <label for="date">Data de Nascimento</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <!-- Campo CPF -->
+            <div class="input-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+            </div>
+
+            <!-- Campo E-mail -->
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </div>
+
+            <!-- Campo Telefone -->
+            <div class="input-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+
+            <!-- Campo Estado -->
+            <div class="EstadoCidade">
+                <div class="input-group">
+                    <label for="state">Estado</label>
+                    <select id="state" name="state" required>
+                        <option value="">Selecione o estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+
+                <!-- Campo Cidade -->
+                <div class="input-group">
+                    <label for="city">Cidade</label>
+                    <select id="city" name="city" required disabled>
+                        <option value="">Selecione o estado primeiro</option>
+                    </select>
+                </div>
+
+                <!-- Campo Oculto: Só aparece se escolher "Outra cidade..." -->
+                <div class="input-group" id="custom-city-group" style="display: none; margin-top: 10px;">
+                    <label for="custom_city">Digite o nome da sua cidade</label>
+                    <input type="text" id="custom_city" name="custom_city" placeholder="Ex: Tupãssi">
+                </div>
+            </div>
+
+            <!-- Campo Endereço -->
+            <div class="input-group">
+                <label for="address">Endereço</label>
+                <input type="text" id="address" name="address" placeholder="Digite seu endereço" required>
+            </div>
+
+            <div class="input-group">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required>
+            </div>
+
+            <!-- Campo Senha -->
+            <div class="input-group">
+                <label for="password">Senha da conta</label>
+                <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
+            </div>
+
+            <!-- Botão de Enviar -->
+            <button type="submit" class="btn-submit">Cadastrar cliente</button>
+        </form>
+
+        <div class="login-link">
+            Já tem uma conta? <a href="#">Faça login</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
