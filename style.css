@@ -1,1 +1,99 @@
+/* ===== BOTÕES - CORES DO BRASIL ===== */
+:root {
+  --verde: #009739;
+  --verde-escuro: #006437;
+  --amarelo: #FEDF00;
+  --branco: #FFFFFF;
+  --cinza: #EEEEEE;
+}
 
+/* 1. SETINHAS PRA PASSAR DE PRODUTO */
+.produto-foto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.produto-foto img {
+  width: 70%;
+  border-radius: 12px;
+}
+
+.seta {
+  background: var(--verde);
+  color: var(--branco);
+  border: 2px solid var(--amarelo);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.seta:hover {
+  background: var(--verde-escuro);
+  transform: scale(1.05);
+}
+
+/* 2. BOTÕES DESCRIÇÃO / DETALHES */
+.abas {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.aba {
+  padding: 9px 18px;
+  border: 2px solid var(--verde);
+  border-radius: 20px;
+  background: var(--branco);
+  color: var(--verde);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.aba.ativa {
+  background: var(--verde);
+  color: var(--branco);
+}
+
+.escondido {
+  display: none;
+}
+
+/* 3. BOTÕES DAS AVALIAÇÕES */
+.btn-util, .btn-responder {
+  padding: 7px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--verde);
+  background: var(--branco);
+  color: var(--verde);
+  cursor: pointer;
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+.btn-util:hover, .btn-responder:hover {
+  background: var(--amarelo);
+  color: #333;
+  border-color: var(--amarelo);
+}
+
+.btn-ver-todas {
+  width: 100%;
+  padding: 12px;
+  background: var(--amarelo);
+  color: #006437;
+  border: none;
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn-ver-todas:hover {
+  background: var(--verde);
+  color: var(--branco);
+}
