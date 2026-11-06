@@ -1,14 +1,221 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <link rel="stylesheet" href="estilo.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Horse Smile - Creme Dental</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
+
+    <!-- CABEÇALHO -->
     <header>
+        <div class="logo">
+            🐴 Horse Smile
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#cadastro">Cadastro</a>
+        </nav>
     </header>
+
     <main>
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="inicio">
+
+            <h1>Seu sorriso merece o melhor!</h1>
+
+            <p>
+                Cuidado, proteção e frescor para o seu sorriso.
+            </p>
+
+            <a href="#produtos" class="botao">
+                Conheça nossos produtos
+            </a>
+
+            <div class="mascote">
+                🐴
+            </div>
+
+        </section>
+
+        <!-- SOBRE A MARCA -->
+        <section id="sobre">
+
+            <h2>Sobre a Horse Smile</h2>
+
+            <p>
+                Nossa marca foi criada para oferecer
+                qualidade, cuidado e proteção bucal.
+                Queremos deixar todos os sorrisos mais
+                saudáveis e felizes.
+            </p>
+
+        </section>
+
+        <!-- PRODUTOS -->
+        <section id="produtos">
+
+            <h2>Nossos 11 Cremes Dentais</h2>
+
+            <div class="lista-produtos">
+
+                <article class="produto">
+                    <h3>1. Menta Fresh</h3>
+                    <p>Frescor e proteção.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+                <article class="produto">
+                    <h3>2. Whitening</h3>
+                    <p>Cuidado para os dentes.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+                <article class="produto">
+                    <h3>3. Proteção Total</h3>
+                    <p>Proteção diária.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+                <article class="produto">
+                    <h3>4. Sensitive</h3>
+                    <p>Cuidado para dentes sensíveis.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+                <article class="produto">
+                    <h3>5. Kids</h3>
+                    <p>Cuidado infantil.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+                <article class="produto">
+                    <h3>6. Herbal</h3>
+                    <p>Frescor herbal.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+                <article class="produto">
+                    <h3>7. Carvão Ativado</h3>
+                    <p>Limpeza bucal.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+                <article class="produto">
+                    <h3>8. Ice Fresh</h3>
+                    <p>Sensação refrescante.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+                <article class="produto">
+                    <h3>9. Extra White</h3>
+                    <p>Cuidado e limpeza.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+                <article class="produto">
+                    <h3>10. Natural</h3>
+                    <p>Cuidado diário.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+                <article class="produto">
+                    <h3>11. Fresh Mint</h3>
+                    <p>Hálito refrescante.</p>
+                    <button type="button">Saiba mais</button>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CADASTRO DE CLIENTE -->
+        <section id="cadastro">
+
+            <h2>Cadastro de Cliente</h2>
+
+            <form id="form-cliente">
+
+                <input type="text"
+                    placeholder="Nome completo"
+                    required>
+
+                <input type="email"
+                    placeholder="E-mail"
+                    required>
+
+                <input type="tel"
+                    placeholder="Telefone"
+                    required>
+
+                <input type="text"
+                    placeholder="Endereço"
+                    required>
+
+                <button type="submit">
+                    Cadastrar Cliente
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- CADASTRO DE PRODUTOS -->
+        <section id="cadastro-produto">
+
+            <h2>Cadastro de Produtos</h2>
+
+            <form id="form-produto">
+
+                <input type="text"
+                    placeholder="Nome do produto"
+                    required>
+
+                <input type="number"
+                    placeholder="Preço"
+                    min="0"
+                    step="0.01"
+                    required>
+
+                <input type="number"
+                    placeholder="Quantidade"
+                    min="0"
+                    required>
+
+                <button type="submit">
+                    Cadastrar Produto
+                </button>
+
+            </form>
+
+        </section>
+
     </main>
-<script src="index.js"></script> 
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            © 2026 Horse Smile - Todos os direitos reservados.
+        </p>
+
+        <p>
+            Seu sorriso é nossa prioridade!
+        </p>
+
+    </footer>
+
+    <!-- CONEXÃO COM JAVASCRIPT -->
+    <script src="script.js"></script>
+
 </body>
-    <footer></footer>
 </html>
