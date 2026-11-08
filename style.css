@@ -2,11 +2,11 @@
 :root {
   --vermelho: #CC2132;
   --laranja: #E6692A;
-  --laranja-claro #ED9530;
+  --laranja-claro: #ED9530; 
   --bege: #E9BD96;
   --mostarda: #988A20;
   --verde: #34685C;
-  --azul:#1E404F
+  --azul: #1E404F
 }
 
 /* 1. SETINHAS PRA PASSAR DE PRODUTO */
@@ -20,6 +20,7 @@
 .produto-foto img {
   width: 70%;
   border-radius: 12px;
+  border: 2px solid var(--bege);
 }
 
 .seta {
