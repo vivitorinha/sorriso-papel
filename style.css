@@ -191,22 +191,58 @@ font-family: inherit;
 transition: 0.3s ease;
 }
 
+button:focus-visible {
+  outline: 3px solid var(--laranja);
+  outline-offset: 3px;
+}
 
+button: disabled {
+  background: var(--bege);
+  color: var(--azul);
+  cursor: not-allowed;
+ }
 
 /* ==========================================
    8
 ========================================== */
 
-
-
-
+::selection {
+   background: var(--vermelho);
+   color: var(--branco);
+ }
 
 /* ==========================================
-   9
+   9. ADAPTAÇÃO PARA CELULAR
 ========================================== */
 
+@media (max-width: 600px) {
+    .produto-foto{
+      flex-direction: column;
+ }
 
+  .produto-foto img{
+     width: 100%;
+ }
 
+  .aba {
+    justify-content: center;
+ }
+  
+  .aba {
+      padding: 8px 12px;
+  }
+
+  .btn-util,
+  .btn-responder {
+    margin-bottom: 8px;
+  }
+
+  .produto-card{
+      width:100%;
+  }
+
+  .avaliacoes {
+    padding: 12
 
 /* ==========================================
    10. CABEÇARIO
@@ -216,4 +252,5 @@ header {
   background: var(--vermelho);
   color: var(--branco);
   padding: 20px;
-}
+ }
+
