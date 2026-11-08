@@ -1,267 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sorriso Papel - Creme Dental</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorriso Papel - Um sorriso que é a sua cara!</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- CABEÇALHO -->
-    <header>
-        <div class="logo">
-            Sorriso Papel
-        </div>
+<header>
+  <div class="logo">Sorriso Papel</div>
+  <nav><a href="#">Início</a> <a href="#produtos">Produtos</a> <a href="#kits">Kits</a> <a href="#promocao">Promoção</a> <a href="#mascote">Papelito</a> <a href="#equipe">Equipe</a></nav>
+</header>
 
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#produtos">Produtos</a>
-        </nav>
-    </header>
+<section>
+  <h1>Sorriso Tropical, Cuidado Especial!</h1>
+  <p>Linha completa com cara de Brasil, de verão, de alegria! ☀️🌴</p>
+</section>
 
-    <main>
+<section id="produtos">
+  <h2>Linha Completa Desenvolvida</h2>
+  <hr class="linha">
+  <h3>🪥 Creme Dental Clássico - 90g</h3>
+  <div class="lista-produtos"><div class="produto-card cor-classico"><img src="papel.jpg" alt="Clássico"><h3>Clássico</h3><p>Proteção completa - 90g</p><p><b>R$ 12,90</b></p><button>Ver mais</button></div></div>
+  <h3 style="margin-top:30px;">🍓 Creme Dental Sabores - 90g</h3>
+  <div class="lista-produtos">
+    <div class="produto-card cor-menta"><img src="papel.jpeg" alt="Mentolado"><h3>Mentolado</h3><p>Refrescante - 90g</p><p><b>R$ 13,90</b></p><button>Ver mais</button></div>
+    <div class="produto-card cor-tutti"><img src="papel.jpeg" alt="Tutti-Frutti"><h3>Tutti-Frutti</h3><p>Colorido e alegre - 90g</p><p><b>R$ 13,90</b></p><button>Ver mais</button></div>
+    <div class="produto-card cor-morango"><img src="papel.jpeg" alt="Morango"><h3>Morango</h3><p>Doce e divertido - 90g</p><p><b>R$ 13,90</b></p><button>Ver mais</button></div>
+  </div>
+  <h3 style="margin-top:30px;">🧒 Linha Infantil Kids - 90g</h3>
+  <div class="lista-produtos">
+    <div class="produto-card cor-tutti"><img src="papel.jpeg" alt="Kids Tutti-Frutti"><h3>Kids Tutti-Frutti</h3><p>Para crianças - 90g</p><p><b>R$ 14,90</b></p><button>Ver mais</button></div>
+    <div class="produto-card cor-morango"><img src="papel.jpeg" alt="Kids Morango"><h3>Kids Morango</h3><p>Para crianças - 90g</p><p><b>R$ 14,90</b></p><button>Ver mais</button></div>
+  </div>
+  <h3 style="margin-top:30px;">✨ Complementos</h3>
+  <div class="lista-produtos">
+    <div class="produto-card cor-enxaguante"><img src="papel.jpeg" alt="Enxaguante"><h3>Enxaguante Bucal</h3><p>Hálito fresquinho</p><p><b>R$ 15,90</b></p><button>Ver mais</button></div>
+    <div class="produto-card cor-fio"><img src="papel.jpeg" alt="Fio Dental"><h3>Fio Dental</h3><p>Limpeza completa</p><p><b>R$ 9,90</b></p><button>Ver mais</button></div>
+    <div class="produto-card cor-escova-adulto"><img src="papel.jpeg" alt="Escova Adulto"><h3>Escova Adulto</h3><p>Macia - Adulto</p><p><b>R$ 11,90</b></p><button>Ver mais</button></div>
+    <div class="produto-card cor-escova-kids"><img src="papel.jpeg" alt="Escova Infantil"><h3>Escova Infantil</h3><p>Macia - Kids</p><p><b>R$ 11,90</b></p><button>Ver mais</button></div>
+  </div>
+  <h3 style="margin-top:30px;">🎁 Brinde</h3>
+  <div class="lista-produtos"><div class="produto-card cor-brinde"><img src="papel.jpeg" alt="Papelito"><h3>Cavalo Colecionável Papelito</h3><p>Brinde colecionável! Vira tampa da pasta!</p><p><b>GRÁTIS na compra</b></p><button>Ver mais</button></div></div>
+  <p style="margin-top:20px;"><b>Todos os produtos também são vendidos separadamente!</b></p>
+  <h2 style="margin-top:30px;">Detalhe do Produto</h2>
+  <div class="produto-foto"><button class="seta" onclick="trocarProduto(-1)">◀</button><img id="foto-produto" src="papel.jpeg" alt="Produto"><button class="seta" onclick="trocarProduto(1)">▶</button></div>
+<div class="abas"><button class="aba ativa" onclick="mostrarAba('descricao', this)">Descrição</button><button class="aba" onclick="mostrarAba('detalhes', this)">Detalhes</button></div>
+<div id="descricao" class="caixa-texto"><p>Nosso creme dental tem sabor delicioso, deixa seu hálito fresquinho e seu sorriso brilhando. Com adoçante natural que previne cárie, hidroxiapatita que clareia naturalmente, sem SLS e sem parabenos. 100% natural e fabricação própria!</p></div>
+<div id="detalhes" class="caixa-texto escondido"><p><b>Linha:</b> Completa Sorriso Papel<br><b>Tamanho:</b> 90g<br><b>Com flúor:</b> Sim<br><b>Brinde:</b> Cavalo Colecionável Papelito - vira tampa!</p></div>
+<div class="avaliacoes"><h2>Avaliações ⭐⭐⭐⭐⭐</h2><div class="avaliacoes-item"><p><b>Maria ⭐⭐⭐⭐⭐</b><br>Amei! Meu filho agora quer escovar os dentes sozinho por causa do Papelito!</p><button class="btn-util" onclick="curtir(this)">Útil 💛</button><button class="btn-responder" onclick="responder()">Responder</button></div><button class="btn-ver-todas">Ver todas as avaliações</button></div>
+</section>
 
-        <!-- INÍCIO -->
-        <section id="inicio" class="inicio">
+<section id="kits">
+  <h2>🎁 Kits Promocionais</h2>
+  <hr class="linha">
+  <p>Além dos kits, todos os produtos são vendidos separadamente!</p>
+  <div class="lista-kits">
+    <div class="kit-card kit-1"><img src="papel.jpeg" alt="Kit Completo Família"><h3>Kit 1 - Completo Família</h3><p class="kit-preco">O mais completo!</p><ul><li>3 pastas [1 normal + 2 com sabor]</li><li>1 enxaguante bucal</li><li>1 fio dental</li><li>1 escova dental</li><li>1 cavalo colecionável Papelito</li></ul><button>Quero esse Kit!</button></div>
+    <div class="kit-card kit-2"><img src="papel.jpeg" alt="Kit Duplo Econômico"><h3>Kit 2 - Duplo Econômico</h3><p class="kit-preco">Econômico e prático!</p><ul><li>2 pastas</li><li>1 escova dental</li><li>1 cavalo colecionável Papelito</li></ul><button>Quero esse Kit!</button></div>
+    <div class="kit-card kit-3"><img src="papel.jpeg " alt="Kit Infantil"><h3>Kit 3 - Infantil</h3><p class="kit-preco">Para as crianças!</p><ul><li>2 pastas infantis</li><li>1 escova infantil</li><li>1 cavalo colecionável Papelito</li></ul><button>Quero esse Kit!</button></div>
+  </div>
+</section>
 
-            <h1>Sorriso Papel!</h1>
+<section id="promocao">
+  <h2>📅 Dias Promocionais</h2>
+  <hr class="linha">
+  <div class="caixa-promo"><h3>Quarta e Sexta-feira, uma vez por mês!</h3><p style="margin-top:10px;">Não é toda quarta e sexta, é só <b>UMA quarta e UMA sexta por mês!</b></p><p style="margin-top:10px;"><b>Objetivo:</b> Atrair fluxo no meio e fim de semana, quando o consumidor recebe e vai ao mercado.</p><div class="dias-promo"><div class="dia"><span>QUA</span><p>Quarta-feira<br>Dia Promocional</p></div><div class="dia"><span>SEX</span><p>Sexta-feira<br>Dia Promocional</p></div></div><p style="margin-top:15px;">Nos outros dias, a gente vende normal, sem o kit promocional e sem o Papelito.</p><p><b>Quer ser avisado?</b> Manda um e-mail para <b>sorrisopapel@gmail.com</b> com seu nome e WhatsApp que a gente te avisa!</p><button class="botao-principal" onclick="avisarPromo()">Quero ser avisado!</button></div>
+</section>
 
-            <p>
-                Sorriso Tropical, cuidado especial.
-            </p>
+<section id="mascote">
+  <h2>Conheça o Papelito 🐴</h2>
+  <img src="papel.jpeg" alt="Papelito cavalo">
+  <p>Todos os cremes dentais parecem seguir um mesmo padrão. Nós decidimos fazer diferente. Foi então que surgiu o Papelito: um cavalo cheio de personalidade, escolhido porque esse animal é uma grande referência quando o assunto são dentes fortes e um sorriso impossível de esquecer.</p>
+  <h3>"Cuidar do sorriso pode — e deve — ser divertido."</h3>
+  <p style="margin-top:10px;"><b>🎁 Ele é brinde colecionável e vira tampa da pasta! O creme sai pela boquinha dele!</b></p>
+</section>
 
-            <a href="#produtos" class="botao">
-                Conheça nossos produtos
-            </a>
+<section id="equipe">
+  <h2>Nossa Equipe</h2>
+  <hr class="linha">
+  <p>Quem faz a Sorriso Papel acontecer!</p>
+  <div class="lista-integrantes">
+    <div class="integrante"><img src="papel.jpg" alt="Integrante 1"><h3>Sophia</h3><p>Co-fundadora, Co-Gerente e Desenvolvedora JavaScript</p></div>
+    <div class="integrante"><img src="papel.jpg" alt="Integrante 2"><h3>Rayssa</h3><p>Co-fundadora, Co-Gerente e Web Designer</p></div>
+    <div class="integrante"><img src="papel.jpg" alt="Integrante 3"><h3>Mariana</h3><p>Web Designer</p></div>
+    <div class="integrante"><img src="papel.jpg" alt="Integrante 4"><h3>Rafaela</h3><p>Desenvolvedora JavaScript</p></div>
+    <div class="integrante"><img src="papel.jpg" alt="Integrante 5"><h3>Oslanda</h3><p>Desenvolvedora HTML</p></div>
+    <div class="integrante"><img src="papel.jpg" alt="Integrante 6"><h3>Daniel</h3><p>Desenvolvedor HTML</p></div>
+    <div class="integrante"><img src="papel.jpg" alt="Integrante 7"><h3>Beatriz</h3><p>Mentora e Consultora Técnica</p></div>
+  </div>
+</section>
 
-            <div class="mascote">
-            
-            </div>
+<footer>
+  <p>Sorriso Papel - Feito com carinho em Toledo - PR 🇧🇷</p>
+  <p>Um sorriso Tropical, Cuidado Especial!</p>
+  <p style="margin-top:10px;">📧 Fale com a gente: <a href="mailto:sorrisopapel@gmail.com" style="color:#FAD564; font-weight:bold;">sorrisopapel@gmail.com</a></p>
+  <p style="margin-top:5px; font-size:13px;">Quer ser avisado da promoção? Manda um e-mail pra gente com seu nome e WhatsApp!</p>
+</footer>
 
-        </section>
-
-        <!-- SOBRE A MARCA -->
-        <section id="sobre">
-
-            <h2>Sobre a Sorriso Papel</h2>
-
-            <p>
-                Nossa marca foi criada para oferecer
-                qualidade, cuidado e proteção bucal.
-                Queremos deixar todos os sorrisos mais
-                saudáveis e felizes.
-            </p>
-
-        </section>
-
-        <!-- PRODUTOS -->
-        <section id="produtos">
-
-            <h2>Nossos 11 Cremes Dentais</h2>
-
-            <div class="lista-produtos">
-
-                <article class="">
-                    <h3>1. Mentolada</h3>
-                    <p>Frescor e proteção.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-                <article class="produto">
-                    <h3>2. Normal</h3>
-                    <p>Cuidado para os dentes.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-                <article class="produto">
-                    <h3>3. Proteção Total</h3>
-                    <p>Proteção diária.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-                <article class="produto">
-                    <h3>4. Tutti-Frutti</h3>
-                    <p>Cuidado para dentes sensíveis.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-                <article class="produto">
-                    <h3>5. Morango</h3>
-                    <p>Cuidado infantil.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-                <article class="produto">
-                    <h3>6. Herbal</h3>
-                    <p>Frescor herbal.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-                <article class="produto">
-                    <h3>7. Carvão Ativado</h3>
-                    <p>Limpeza bucal.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-                <article class="produto">
-                    <h3>8. Ice Fresh</h3>
-                    <p>Sensação refrescante.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-                <article class="produto">
-                    <h3>9. Extra White</h3>
-                    <p>Cuidado e limpeza.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-                <article class="produto">
-                    <h3>10. Natural</h3>
-                    <p>Cuidado diário.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-                <article class="produto">
-                    <h3>11. Fresh Mint</h3>
-                    <p>Hálito refrescante.</p>
-                    <button type="button">Saiba mais</button>
-                </article>
-
-            </div>
-
-        </section>
-        
-        <section>
-
-        </section> <!-- FIM DOS PRODUTOS -->
-
-        <!-- COLOCA AQUI - DETALHE DO PRODUTO -->
-        <section id="detalhe-produto">
-
-            <div class="produto-foto">
-              <button class="seta" onclick="trocarProduto(-1)">◀</button>
-              <img id="foto-produto" src="produto1.jpg" alt="Produto Sorriso Papel">
-              <button class="seta" onclick="trocarProduto(1)">▶</button>
-            </div>
-            root
-            <div class="abas">
-              <button class="aba ativa" onclick="mostrarAba('descricao', this)">Descrição</button>
-              <button class="aba" onclick="mostrarAba('detalhes', this)">Detalhes</button>
-            </div>
-
-            <div id="descricao" class="conteudo-aba">
-              <p>Aqui vai as características do produto...</p>
-            </div>
-
-            <div id="detalhes" class="conteudo-aba escondido">
-              <p>Aqui vai os detalhes técnicos...</p>
-            </div>
-
-            <div class="avaliacao">
-              <p>⭐⭐⭐⭐⭐</p>
-              <p><strong>Maria</strong> - Amei o produto!</p>
-              <button class="btn-util" onclick="curtir(this)">Útil (0)</button>
-              <button class="btn-responder" onclick="responder()">Responder</button>
-            </div>
-
-            <button class="btn-ver-todas">Ver todas as avaliações</button>
-
-        </section>
-        <!-- FIM DO DETALHE -->
-
-    <!-- RODAPÉ -
-
-    <!-- CONEXÃO COM JAVASCRIPT -->
-    <script src="script.js"></script>
-    
-<section id="integrantes">
-    <h2>Conheça nossos integrantes</h2>
-    <div>class="lista-integrantes"</div>
-    <section id="integrantes">
-
-    <h2>Integrantes do grupo</h2>
-
-    <div class="lista-integrantes">
-
-        <article class="integrante">
-            <img src="rayssa.png" alt="Foto de Rayssa">
-            <h3>Rayssa</h3>
-            <p>Web Designer</p>
-            <p>Co-Fundadora e Co-Gerente</p>
-        </article>
-
-        <article class="integrante">
-            <img src="mariana.png" alt="Foto de Mariana">
-            <h3>Mariana</h3>
-            <p>Web Designer</p>
-        </article>
-
-        <article class="integrante">
-            <img src="sophia.png" alt="Foto de Sophia">
-            <h3>Sophia</h3>
-            <p>Desenvolvedora JavaScript</p>
-            <p>Co-Fundadora e Co-Gerente</p>
-        </article>
-
-        <article class="integrante">
-            <img src="rafaela.png" alt="Foto de Rafaela">
-            <h3>Rafaela</h3>
-            <p>Desenvolvedora JavaScript</p>
-        </article>
-
-        <article class="integrante">
-            <img src="oslanda.png" alt="Foto de Oslanda">
-            <h3>Oslanda</h3>
-            <p>Desenvolvedora HTML</p>
-        </article>
-
-        <article class="integrante">
-            <img src="daniel.png" alt="Foto de Daniel">
-            <h3>Daniel</h3>
-            <p>Desenvolvedor HTML</p>
-        </article>
-
-    </div>
-
-    </section>
-
-    <section id="mascote>
-       
-        <h2>Conheça o Papelito 
-
-        <img src="Palelito.png" alt="Mascote Papelito">
-
-        <p>
-            Todos os cremes dentais parecem seguir um mesmo padrão. 
-            Nós decidimos fazer diferente.Queríamos um mascote divertido, diferente e marcante. 
-            Foi então que surgiu o Papelito: um cavalo cheio de personalidade, escolhido porque esse animal é uma grande referência quando o assunto são dentes fortes e um sorriso impossível de esquecer. 
-            Ele representa a alegria, a confiança e a força que queremos levar para a rotina de cada pessoa.
-        </p>
-        
-            <h3> 
-                
-            "Cuidar do sorriso pode — e deve — ser divertido."
-            </h3>
-        
-        </section>
-    </main>
-        
+<script src="script.js"></script>
 </body>
-     <footer>
-
-        <p>
-            © 2026 Sorriso Papel - Todos os direitos reservados.
-        </p>
-
-        <p>
-            Sorriso Tropical, Cuidado especial!
-        </p>
-
-    </footer>
 </html>
