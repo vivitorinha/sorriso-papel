@@ -1,10 +1,12 @@
-/* ===== BOTÕES - CORES DO BRASIL ===== */
+/* ===== BOTÕES - NOVAS PALETAS DE CORES ===== */
 :root {
-  --verde: #009739;
-  --verde-escuro: #006437;
-  --amarelo: #FEDF00;
-  --branco: #FFFFFF;
-  --cinza: #EEEEEE;
+  --vermelho: #CC2132;
+  --laranja: #E6692A;
+  --laranja-claro #ED9530;
+  --bege: #E9BD96;
+  --mostarda: #988A20;
+  --verde: #34685C;
+  --azul:#1E404F
 }
 
 /* 1. SETINHAS PRA PASSAR DE PRODUTO */
