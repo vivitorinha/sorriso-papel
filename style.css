@@ -297,24 +297,57 @@ h1, h2, h3 {
    14. FORMULÁRIO DE CONTATO
 ========================================== */
 
-
-
+input, textarea {
+   background: var(--branco);
+  border: 2px solid var(--verde);
+  border-radius: 10px;
+  padding: 12px;
+  color: var(--azul);
+  width: 100%;
+}
+input: focus,textarea:focus {
+  border-color: var(--vermelho);
+  outline: none;
+}
 
 /* ==========================================
    15. RODAPÉ
 ========================================== */
 
-footer 
-
+footer {
+  background: var(--azul);
+  color: var(--branco);
+  padding: 25px;
+  text-align: center;
+}
 
 /* ==========================================
    16. LINHA DECORATIVA
 ========================================== */
 
-
-
+.linha {
+   height: 4px;
+   background: var(--mostarda);
+   border: none;
+   border-radius: 10px;
+   margin: 15px 0;
+}
 
 /* ==========================================
    17. BOTÃO PRINCIPAL
 ========================================== */
 
+.botao-principal {
+  background: var(--laranja);
+  color: var(--azul);
+  padding: 12px 25px;
+  border: 2px solid var(--vermelho);
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botao-principal
+  background: var(--verde);
+  color: var(--branco);
+}
