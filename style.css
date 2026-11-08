@@ -161,4 +161,59 @@ var(--mostarda);
    6. DESTAQUES DOS PRODUTOS
 ========================================== */
 
+.produto-card {
+    background: var(--bege);
+    border: 2px solid var(--mostarda);
+    border-radius: 15px;
+    padding: 15px,
+    transforn: 0,3s;
+}
 
+.produto-card:hover {
+  background: var(--laranja-claro);
+  transform: translateY(-5px);
+}
+
+.produto-card h3 {
+  color: var(--azul);
+}
+
+.produto-card p {
+  color: var(--azul);
+}
+
+/* ==========================================
+   7
+========================================== */
+
+button {
+font-family: inherit;
+transition: 0.3s ease;
+}
+
+
+
+/* ==========================================
+   8
+========================================== */
+
+
+
+
+
+/* ==========================================
+   9
+========================================== */
+
+
+
+
+/* ==========================================
+   10. CABEÇARIO
+========================================== */
+
+header {
+  background: var(--vermelho);
+  color: var(--branco);
+  padding: 20px;
+}
