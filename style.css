@@ -1,7 +1,16 @@
 /* SORRISO PAPEL - CORES MESCLADAS VIVA + NEUTRA */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: #FFF5D0; color: #1E404F; font-family: Arial, sans-serif; text-align: center; font-size: 18px; line-height: 1.7; }
-header { background: #34685C; color: white; padding: 22px; display: flex; justify-content: space-between; align-items: center; border-bottom: 8px solid #FAD564; flex-wrap: wrap; }
+body { 
+    background: #FFF5D0;
+    color: #1E404F;
+    font-family: Arial, sans-serif;
+    text-align: center;  
+    font-size: 18px;
+    line-height: 1.7; 
+  }
+
+  header {
+      background: #34685C; color: white; padding: 22px; display: flex; justify-content: space-between; align-items: center; border-bottom: 8px solid #FAD564; flex-wrap: wrap; }
 .logo { font-size: 28px; font-weight: bold; }
 nav a { color: white; text-decoration: none; font-weight: bold; margin-left: 16px; font-size: 18px; }
 nav a:hover { color: #FAD564; }
@@ -71,4 +80,3 @@ header { flex-direction: column; gap: 10px; }
 #mascote img { width: 300px; height: 400px; }
 .produto-card, .kit-card, .integrante { width: 100%; }
 .dias-promo { flex-direction: column; align-items: center; }
-}
