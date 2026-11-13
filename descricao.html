@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Detalhes do Produto - Sorriso Papel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Sorriso Papel</div>
+    <nav>
+    <a href="index.html">⬅ Voltar ao Início</a>
+    <a href="index.html#produtos">Produtos</a>
+    <a href="index.html#kits">Kits</a>
+    </nav>
+</header>
+
+<section id="detalhe-produto">
+    <h2>Detalhe do Produto</h2>
+    <hr class="linha">
+
+    <div class="produto-foto">
+    <button class="seta" onclick="trocarProduto(-1)">◀</button>
+    <img id="foto-produto" src="papel.jpeg" alt="Produto">
+    <button class="seta" onclick="trocarProduto(1)">▶</button>
+    </div>
+
+    <div class="abas">
+    <button class="aba ativa" onclick="mostrarAba('descricao', this)">Descrição</button>
+    <button class="aba" onclick="mostrarAba('detalhes', this)">Detalhes</button>
+    </div>
+
+        <div id="descricao" class="caixa-texto">
+    <p>Nosso creme dental tem sabor delicioso, deixa seu hálito fresquinho e seu sorriso brilhando. Com adoçante natural que previne cárie, hidroxiapatita que clareia naturalmente, sem SLS e sem parabenos. 100% natural e fabricação própria!</p>
+        </div>
+
+        <div id="detalhes" class="caixa-texto escondido">
+    <p><b>Linha:</b> Completa Sorriso Papel<br>
+    <b>Tamanho:</b> 90g<br>
+    <b>Com flúor:</b> Sim<br>
+    <b>Brinde:</b> Cavalo Colecionável Papelito - vira tampa!</p>
+        </div>
+
+        <div class="avaliacoes">
+    <h2>Avaliações ⭐⭐⭐⭐⭐</h2>
+    <div class="avaliacoes-item">
+        <p><b>Maria ⭐⭐⭐⭐⭐</b><br>Amei! Meu filho agora quer escovar os dentes sozinho por causa do Papelito!</p>
+        <button class="btn-util" onclick="curtir(this)">Útil 💛</button>
+        <button class="btn-responder" onclick="responder()">Responder</button>
+    </div>
+    <button class="btn-ver-todas">Ver todas as avaliações</button>
+        </div>
+
+        <div style="margin-top: 30px;">
+    <a href="index.html"><button class="botao-principal">⬅ Voltar para a loja</button></a>
+        </div>
+</section>
+
+<footer>
+        <p>Sorriso Papel - Feito com carinho em Toledo - PR 🇧🇷</p>
+        <p>Um sorriso Tropical, Cuidado Especial!</p>
+        <p style="margin-top:10px;">📧 Fale com a gente: <a href="mailto:sorrisopapel@gmail.com" style="color:#FAD564; font-weight:bold;">sorrisopapel@gmail.com</a></p>
+        <p style="margin-top:5px; font-size:13px;">Quer ser avisado da promoção? Manda um e-mail pra gente com seu nome e WhatsApp!</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
