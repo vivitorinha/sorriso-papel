@@ -18,6 +18,7 @@ header {
     align-items: center; 
     border-bottom: 8px solid #FAD564; 
     flex-wrap: wrap; 
+    font-size: 20px;
   }
 
   .logo { 
@@ -86,7 +87,11 @@ h3 {
     flex-wrap: wrap; 
     gap: 16px; 
     justify-content: center; 
-    margin-top: 15px; 
+    margin-top: 15px;
+    width: 12%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .produto-card { 
@@ -95,11 +100,11 @@ h3 {
     border-top: 12px solid #E6692A; 
     border-radius: 20px; 
     padding: 16px; 
-    width: 240px; 
+    width: 50%; 
 }
 
 .produto-card img { 
-    width: 100%; 
+    width: 50%; 
     height: 170px; 
     object-fit: cover; 
     border-radius: 15px; 
@@ -400,7 +405,7 @@ h3 {
 
 #equipe { 
     background: #FFF5D0; 
-}
+} 
 
 .integrante { 
     background: white; 
@@ -429,15 +434,29 @@ footer {
     background: #1E404F; 
     color: white; 
     padding: 26px; 
-    font-size: 17px; 
+    font-size: 28px; 
 }
 
 @media (max-width: 600px) {
-    header { flex-direction: column; gap: 10px; }
-    .produto-foto { flex-direction: column; }
-    .produto-foto img { width: 100%; }
-    #mascote img { width: 300px; height: 400px; }
-    .produto-card, .kit-card, .integrante { width: 100%; }
+    header { 
+      flex-direction: column; 
+      gap: 10px; 
+      font-size: 8px;
+    }
+    .produto-foto { 
+      flex-direction: column; 
+    }
+    .produto-foto img { 
+      width: 100%; 
+    }
+    #mascote img { 
+      width: 300px; 
+      height: 400px; 
+    }
+    .produto-card, .kit-card, .integrante { 
+      width: 100%; 
+    }
+    
 }
 .dias-promo { 
     flex-direction: column; 
